@@ -1,16 +1,12 @@
-import React from "react";
-import { BsInstagram, BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
-import SocialLink from "../components/SocialLink";
-import TitleSections from "./TitleSections";
-import { FaArrowDown } from "react-icons/fa";
-import ArrowAnimation from "./animations/ArrowAnimation";
-import AnimationSections from "./animations/AnimationSections.jsx.jsx";
+import { BsInstagram, BsFacebook, BsLinkedin, BsGithub } from 'react-icons/bs';
+import SocialLink from '../components/SocialLink';
+import AnimationSections from './animations/AnimationSections.jsx.jsx';
 
 const FindMe = () => {
   return (
     <AnimationSections>
-      <div className="findMe grow-0 h-14  mt-36 mb-24 ">
-        <h1 className="text-center text-3xl text-white mb-2 lg:text-4xl bold ">
+      <div className="findMe grow-0 h-14 mt-36 mb-24">
+        <h1 className="text-center text-3xl text-white mb-2 lg:text-4xl bold">
           Find Me On:
         </h1>
 

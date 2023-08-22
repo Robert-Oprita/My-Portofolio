@@ -1,5 +1,5 @@
-import { motion, useInView, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { motion, useInView, useAnimation } from 'framer-motion';
+import { useEffect, useRef } from 'react';
 
 // eslint-disable-next-line react/prop-types
 const AnimationSections = ({ children }) => {
@@ -10,12 +10,9 @@ const AnimationSections = ({ children }) => {
 
   useEffect(() => {
     if (isInView) {
-      mainControls.start("visible");
+      mainControls.start('visible');
     }
-    // if (isInView) {
-    //   console.log(isInView);
-    // }
-  }, [isInView]);
+  }, [isInView, mainControls]);
   return (
     <div>
       <motion.div

@@ -1,5 +1,4 @@
-import React from "react";
-
+import PropTypes from 'prop-types';
 function ProgressBar(props) {
   const { progress, color } = props;
   return (
@@ -7,7 +6,7 @@ function ProgressBar(props) {
       <div className="backLine w-64 bg-gray-300 rounded-lg overflow-hidden ml-4 ">
         <div className={`h-4 ${color}`} style={{ width: `${progress}%` }}></div>
       </div>
-      <p className="  flex justify-center  text-black font-semibold">
+      <p className="flex justify-center text-black font-semibold">
         {progress}%
       </p>
     </>
@@ -15,3 +14,8 @@ function ProgressBar(props) {
 }
 
 export default ProgressBar;
+
+ProgressBar.propTypes = {
+  progress: PropTypes.string,
+  color: PropTypes.string,
+};
