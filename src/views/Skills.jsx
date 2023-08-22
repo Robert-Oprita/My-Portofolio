@@ -1,34 +1,35 @@
-import adaptability from "../assets/skills/adaptability.jpg";
-import problemSolving from "../assets/skills/problemSolving.jpg";
-import timeManagement from "../assets/skills/timeManagement.jpg";
-import communication from "../assets/skills/communication.jpg";
-import TitleSections from "../components/TitleSections";
-import Knowledge from "../components/Knowledge";
-import AnimationSections from "../components/animations/AnimationSections.jsx";
-import SoftSkills from "../components/SoftSkills";
-import TechnicalSkills from "../components/TechnicalSkills";
+import adaptability from '../assets/images/skills/adaptability.jpg';
+import problemSolving from '../assets/images/skills/problemSolving.jpg';
+import timeManagement from '../assets/images/skills/timeManagement.jpg';
+import communication from '../assets/images/skills/communication.jpg';
+
+import TitleSections from '../components/TitleSections';
+import Knowledge from '../components/Knowledge';
+import AnimationSections from '../components/animations/AnimationSections.jsx';
+import SoftSkills from '../components/SoftSkills';
+import TechnicalSkills from '../components/TechnicalSkills';
 
 const Skills = () => {
   return (
     <>
       <div
-        className="wrapperSkills bg-neutral-800  h-auto   flex  flex-col items-center  pb-24 md: flex-col-3 lg:flex-col-2 "
+        className="wrapperSkills bg-neutral-800 h-auto max-w-full flex flex-col items-center md:flex-col-3 lg:flex-col-2"
         id="skills"
       >
         <AnimationSections>
-          <div className="techincallySkills  text-white flex flex-col  text-2xl  shadow-gray-500 p-10 mx-10 mb-10 lg:flex-1">
+          <div className="techincallySkills text-white flex flex-col text-2xl shadow-gray-500 mb-36 lg:flex-1">
             <TitleSections titleS="Technically Skills" />
             <p className=" text-center mb-5 text-xl">
-              I develop my Skills{" "}
+              I develop my Skills{' '}
               <span className="text-orange-500 italic text-2xl font-semibold">
                 Regularry!
               </span>
             </p>
-            <div className="cardSkills bg-neutral-800 md:grid grid-cols-2   ">
+            <div className="techSkills bg-neutral-800 md:grid grid-cols-2">
               <TechnicalSkills
                 imgSkill={
                   <svg
-                    className="h-32 w-32 mt-4 "
+                    className="h-32 w-32 mt-4"
                     width="800px"
                     height="800px"
                     viewBox="0 0 32 32"
@@ -77,12 +78,12 @@ const Skills = () => {
                     fill="none"
                     viewBox="0 0 54 33"
                   >
-                    <g clip-path="url(#prefix__clip0)">
+                    <g clipPath="url(#prefix__clip0)">
                       <path
                         fill="#38bdf8"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </g>
                     <defs>
@@ -149,44 +150,64 @@ const Skills = () => {
                 }
                 titleSkill="React"
                 progress="85"
-                progressColor="bg-blue-400"
+                progressColor="bg-cyan-400"
+              />
+              <TechnicalSkills
+                imgSkill={
+                  <svg
+                    className="fill-cyan-300 h-32 w-32 mt-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-label="TypeScript"
+                    role="img"
+                    viewBox="0 0 512 512"
+                  >
+                    <rect width="512" height="512" rx="15%" fill="#3178c6" />
+                    <path
+                      fill="#ffffff"
+                      d="m233 284h64v-41H118v41h64v183h51zm84 173c8.1 4.2 18 7.3 29 9.4s23 3.1 35 3.1c12 0 23-1.1 34-3.4c11-2.3 20-6.1 28-11c8.1-5.3 15-12 19-21s7.1-19 7.1-32c0-9.1-1.4-17-4.1-24s-6.6-13-12-18c-5.1-5.3-11-10-18-14s-15-8.2-24-12c-6.6-2.7-12-5.3-18-7.9c-5.2-2.6-9.7-5.2-13-7.8c-3.7-2.7-6.5-5.5-8.5-8.4c-2-3-3-6.3-3-10c0-3.4.89-6.5 2.7-9.3s4.3-5.1 7.5-7.1c3.2-2 7.2-3.5 12-4.6c4.7-1.1 9.9-1.6 16-1.6c4.2 0 8.6.31 13 .94c4.6.63 9.3 1.6 14 2.9c4.7 1.3 9.3 2.9 14 4.9c4.4 2 8.5 4.3 12 6.9v-47c-7.6-2.9-16-5.1-25-6.5s-19-2.1-31-2.1c-12 0-23 1.3-34 3.8s-20 6.5-28 12c-8.1 5.4-14 12-19 21c-4.7 8.4-7 18-7 30c0 15 4.3 28 13 38c8.6 11 22 19 39 27c6.9 2.8 13 5.6 19 8.3s11 5.5 15 8.4c4.3 2.9 7.7 6.1 10 9.5c2.5 3.4 3.8 7.4 3.8 12c0 3.2-.78 6.2-2.3 9s-3.9 5.2-7.1 7.2s-7.1 3.6-12 4.8c-4.7 1.1-10 1.7-17 1.7c-11 0-22-1.9-32-5.7c-11-3.8-21-9.5-28.1-15.44z"
+                    />
+                  </svg>
+                }
+                titleSkill="TypeScript"
+                progress="40"
+                progressColor="bg-indigo-600"
               />
             </div>
           </div>
         </AnimationSections>
 
         <AnimationSections>
-          <div className="softSkills  text-white flex flex-col  text-2xl  shadow-gray-500 p-10 mx-10 mb-10 lg:flex-1 ">
+          <div className="softSkills text-white flex flex-col text-2xl shadow-gray-500 mb-36 lg:flex-1">
             <TitleSections titleS="Soft Skills" />
-            <p className=" text-center mb-5 text-xl">
-              I{" "}
+            <p className="text-center mb-5 text-xl">
+              I{' '}
               <span className="text-orange-500 italic text-2xl font-semibold">
                 balance
-              </span>{" "}
+              </span>{' '}
               soft skills in my work!
             </p>
-            <div className="cardSkills bg-neutral-800 md:grid grid-cols-2   ">
+            <div className="cardSkills bg-neutral-800 md:grid grid-cols-2">
               <SoftSkills
-                imgSkill={<img src={adaptability} className=" h-48  " />}
+                imgSkill={<img src={adaptability} className="h-48" />}
                 titleSkill="Adaptability"
               />
               <SoftSkills
-                imgSkill={<img src={problemSolving} className=" h-48  " />}
+                imgSkill={<img src={problemSolving} className="h-48" />}
                 titleSkill="Problem Solving"
               />
               <SoftSkills
-                imgSkill={<img src={timeManagement} className=" h-48 " />}
+                imgSkill={<img src={timeManagement} className="h-48" />}
                 titleSkill="Time Management"
               />
               <SoftSkills
-                imgSkill={<img src={communication} className=" h-48 " />}
+                imgSkill={<img src={communication} className="h-48" />}
                 titleSkill="Communication"
               />
             </div>
           </div>
         </AnimationSections>
 
-        <div className=" lg:flex flex-col-2 gap-0 m-0">
+        <div className="lg:flex flex-col-2 gap-0 m-0 mb-36">
           <AnimationSections>
             <Knowledge
               titleE="Experience"
